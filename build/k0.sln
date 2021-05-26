@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bootstub", "bootstub.vcxproj", "{B1567929-276E-4BB4-89C5-9C4D7C351B46}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libkrt", "libkrt.vcxproj", "{061F0B68-04D2-46D3-BE08-B11D73046C10}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kernel", "kernel.vcxproj", "{3917AC52-E1B0-474B-9A3E-6B24A41B65A1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{061F0B68-04D2-46D3-BE08-B11D73046C10} = {061F0B68-04D2-46D3-BE08-B11D73046C10}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pxeimage", "pxeimage.vcxproj", "{ADD71E1B-089A-4419-A798-8AC76563329E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1567929-276E-4BB4-89C5-9C4D7C351B46} = {B1567929-276E-4BB4-89C5-9C4D7C351B46}
+		{3917AC52-E1B0-474B-9A3E-6B24A41B65A1} = {3917AC52-E1B0-474B-9A3E-6B24A41B65A1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1567929-276E-4BB4-89C5-9C4D7C351B46}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B1567929-276E-4BB4-89C5-9C4D7C351B46}.Debug|Win32.Build.0 = Debug|Win32
+		{B1567929-276E-4BB4-89C5-9C4D7C351B46}.Release|Win32.ActiveCfg = Release|Win32
+		{B1567929-276E-4BB4-89C5-9C4D7C351B46}.Release|Win32.Build.0 = Release|Win32
+		{061F0B68-04D2-46D3-BE08-B11D73046C10}.Debug|Win32.ActiveCfg = Debug|Win32
+		{061F0B68-04D2-46D3-BE08-B11D73046C10}.Debug|Win32.Build.0 = Debug|Win32
+		{061F0B68-04D2-46D3-BE08-B11D73046C10}.Release|Win32.ActiveCfg = Release|Win32
+		{061F0B68-04D2-46D3-BE08-B11D73046C10}.Release|Win32.Build.0 = Release|Win32
+		{3917AC52-E1B0-474B-9A3E-6B24A41B65A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3917AC52-E1B0-474B-9A3E-6B24A41B65A1}.Debug|Win32.Build.0 = Debug|Win32
+		{3917AC52-E1B0-474B-9A3E-6B24A41B65A1}.Release|Win32.ActiveCfg = Release|Win32
+		{3917AC52-E1B0-474B-9A3E-6B24A41B65A1}.Release|Win32.Build.0 = Release|Win32
+		{ADD71E1B-089A-4419-A798-8AC76563329E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ADD71E1B-089A-4419-A798-8AC76563329E}.Debug|Win32.Build.0 = Debug|Win32
+		{ADD71E1B-089A-4419-A798-8AC76563329E}.Release|Win32.ActiveCfg = Release|Win32
+		{ADD71E1B-089A-4419-A798-8AC76563329E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
